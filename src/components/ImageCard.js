@@ -3,10 +3,11 @@ import React from 'react';
 const ImageCard = props => {
     return (
         <div className="images">
-            <div className="imageByDate" alt="image from ${props.date}" src={props.hdurl}>
-                <h3>{props.title}</h3>
-                <p>{props.explanation}</p>
-                <p>{props.date}</p>
+            <div className="imageByDate" alt="image from ${props.date}" src={props.images.hdurl}>
+                <h3>{props.images.title}</h3>
+                <p>{props.images.explanation}</p>
+                <p>{props.images.date}</p>
+                <img src={props.images.hdurl} />
             </div>
         </div>
     )

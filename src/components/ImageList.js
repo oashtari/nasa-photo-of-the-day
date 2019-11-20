@@ -8,7 +8,7 @@ export default function ImageList() {
 
     useEffect(() => {
         axios
-            .get('https://api.nasa.gov/planetary/apod')
+            .get('https://api.nasa.gov/planetary/apod?api_key=48RpYPlWRmLEBJfjcnQyl6VbZ7VRpJRYvbGaQwOU')
             .then(response => {
                 console.log(response.data);
                 setImages(response.data);
@@ -19,9 +19,10 @@ export default function ImageList() {
 
     return (
         <div className="image">
-            {images.map(image => {
-                return <ImageCard image={image} key={image.date} />
-            })}
+            {/* {images.map(image => { */}
+            {/* return  */}
+            <ImageCard images={images} key={images.date} />
+            {/* })} */}
 
         </div>
     )
