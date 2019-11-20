@@ -2,8 +2,9 @@ import React from "react";
 import "./App.css";
 import './index';
 import ImageList from './components/Images/ImageList';
+import TheTitleCard from './components/TitleCardFolder/TheTitle';
 // import DateCard from './components/DatePicker';
-import DatePicker from './components/DatePicker';
+// import DatePicker from './components/DatePicker';
 
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
       {/* <Nasa_logo /> */}
       <div className="picker">
         {/* <DateCard /> */}
-        <DatePicker selected={this.state.date} onChange={this.handleChange} />
+        {/* <DatePicker selected={this.state.date} onChange={this.handleChange} /> */}
       </div>
       <div className="imageByDate">
+        <TheTitleCard />
         <ImageList />
       </div>
     </div>
