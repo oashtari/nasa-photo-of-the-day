@@ -15,3 +15,12 @@ code {
 #root {
   border: 5px solid black;
 }
+
+img {
+  height: 750px;
+  width: 750px;
+}
+
+p {
+  width: 750px;
+}

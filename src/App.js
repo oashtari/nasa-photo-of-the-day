@@ -1,7 +1,10 @@
 import React from "react";
 import "./App.css";
 import './index';
-import ImageList from './components/ImageList';
+import ImageList from './components/Images/ImageList';
+// import DateCard from './components/DatePicker';
+import DatePicker from './components/DatePicker';
+
 
 function App() {
   return (
@@ -9,10 +12,12 @@ function App() {
 
     <div className="App">
       {/* <Nasa_logo /> */}
+      <div className="picker">
+        {/* <DateCard /> */}
+        <DatePicker selected={this.state.date} onChange={this.handleChange} />
+      </div>
       <div className="imageByDate">
         <ImageList />
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
       </div>
     </div>
   );
