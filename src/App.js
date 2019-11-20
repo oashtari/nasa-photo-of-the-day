@@ -5,16 +5,16 @@ import ImageList from './components/ImageList';
 
 function App() {
   return (
-    const [date, setDate] = useState();
+    // const [date, setDate] = useState();
 
-  <div className="App">
-    <Nasa_logo />
-    <div className="imageByDate">
-      <ImageCard />
-      Read through the instructions in the README.md file to build your NASA
-      app! Have fun 🚀!
+    <div className="App">
+      {/* <Nasa_logo /> */}
+      <div className="imageByDate">
+        <ImageList />
+        Read through the instructions in the README.md file to build your NASA
+        app! Have fun 🚀!
       </div>
-  </div>
+    </div>
   );
 }
 
