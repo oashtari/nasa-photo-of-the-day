@@ -1,14 +1,20 @@
 import React from "react";
 import "./App.css";
+import './index';
+import ImageList from './components/ImageList';
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    const [date, setDate] = useState();
+
+  <div className="App">
+    <Nasa_logo />
+    <div className="imageByDate">
+      <ImageCard />
+      Read through the instructions in the README.md file to build your NASA
+      app! Have fun 🚀!
+      </div>
+  </div>
   );
 }
 
