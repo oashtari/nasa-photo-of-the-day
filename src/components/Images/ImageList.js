@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ImageCard from './ImageCard';
+import {Container, Row, Col} from 'reactstrap';
+import styled from 'styled-components';
 
 export default function ImageList() {
     const [images, setImages] = useState([]);
@@ -16,14 +18,16 @@ export default function ImageList() {
             .catch(error => console.log(error));
     }, []);
 
+    const ImageDiv = styled.div`
+        border: 3px dashed #29a329;
+    `;
 
     return (
-        <div className="image">
-            {/* {images.map(image => { */}
-            {/* return  */}
-            <ImageCard nasa={images} key={images.date} />
-            {/* })} */}
+        <Container>
+            <ImageDiv>
+                <ImageCard nasa={images} key={images.date} />
+            </ImageDiv>
 
-        </div>
+        </Container>
     )
 }
